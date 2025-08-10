@@ -10,7 +10,7 @@
 - **CAPTURA DE PANTALLA:**
   <img width="1920" height="922" alt="Captura" src="https://github.com/user-attachments/assets/b666f6c7-e950-4b38-bd76-0a4b83019ddf" />
 
-  [Visita la página de mi proyecto](https://github.com)
+  [Visita y prueba mi proyecto](https://leo-xcl.github.io/Challenge-Amigo-Secreto/)
 
 
   
