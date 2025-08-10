@@ -14,6 +14,21 @@ function agregarAmigo(){
     }
 }
 
+function limpiarcaja(){
+    document.getElementById("amigo").value = ""; // Limpia el campo input
+}
+
+function mostrarListaDeAmigos(){
+    let lista = document.getElementById("listaAmigos") // Ubica la lista en el HTML
+    lista.innerHTML = ""; // Limpia la lista antes de volver a llenarla (cada que se agrega un nombre)
+    // Recorre todos los nombres guardados
+    for(let i = 0; i < listaAmigos.length; i++){
+        let li = document.createElement("li"); // Crea un nuevo elemento <li>
+        li.textContent = listaAmigos[i]; // Le asigna el nombre correspondiente según su posicion de indice
+        lista.appendChild(li); // Lo agrega a la lista en pantalla
+    }
+}
+
 function sortearAmigo(){
     if (listaAmigos.length === 0){ // Si no hay nombres en la lista, muestra alerta
         alert("Por favor ingrese al menos un nombre");
@@ -24,21 +39,5 @@ function sortearAmigo(){
 
         let sorteo = document.getElementById("resultado"); // Ubica el elemento donde se mostrará el ganador
         sorteo.innerHTML = `<li>${amigoSorteado}</li>`; // Muestra el nombre ganador dentro de un <li> (lista de HTML)
-    }
-}
-
-function limpiarcaja(){
-    document.getElementById("amigo").value = ""; // Limpia el campo input
-}
-
-function mostrarListaDeAmigos(){
-    let lista = document.getElementById("listaAmigos") // Ubica la lista en el HTML
-    lista.innerHTML = ""; // Limpia la lista antes de volver a llenarla (cada que se agrega un nombre)
-
-    // Recorre todos los nombres guardados
-    for(let i = 0; i < listaAmigos.length; i++){
-        let li = document.createElement("li"); // Crea un nuevo elemento <li>
-        li.textContent = listaAmigos[i]; // Le asigna el nombre correspondiente según su posicion de indice
-        lista.appendChild(li); // Lo agrega a la lista en pantalla
     }
 }
